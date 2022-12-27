@@ -1,0 +1,140 @@
+.App {
+  display: flex;
+  /* flex-direction: column; */
+  height: 100vh;
+  width: 100vw;
+  justify-content: center;
+  align-items: center;
+  background: aliceblue;
+}
+
+.App .header-title {
+  font-size: 2rem;
+  position: absolute;
+  top: 2rem;
+}
+
+.modal, table {
+  width: 60%;
+  max-height: 70%;
+  padding: 12px;
+  height: auto;
+  background-color: #eafaf7;
+  border: 2px solid #cde8e3;
+}
+
+form > * {
+  padding: 12px;
+}
+
+.modal .title {
+  text-align: center;
+  font-size: 1.3rem;
+}
+
+.columns {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 12px;
+  font-weight: 700;
+}
+
+.columns .columnItems {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1 1 0;
+  width: 0;
+}
+
+.columnItems select {
+  margin: 0 10px;
+}
+
+.modal .submitBtn {
+  text-align: center;
+  padding: 8px 50px;
+}
+
+.modal .submitBtn button {
+  padding: 8px 50px;
+}
+
+button {
+  padding: 0.5rem 1rem;
+  background: #54e4c9;
+  border: none;
+}
+
+button[disabled] {
+  background: #e6e6e6;
+}
+
+button:not([disabled]):hover {
+  cursor: pointer;
+  background: #5ddcc5;
+}
+
+.backBtn {
+  position: absolute;
+  padding: 5px;
+  margin: 12px;
+  border: 2px #54e4c9 solid;
+  border-radius: 15px;
+  background: none;
+}
+
+.newBtn {
+  padding: 0.5rem 1rem;
+  position: relative;
+  margin: 0 auto 0 0;
+}
+
+.circle {
+  margin: 10px;
+  width: 30px;
+  height: 30px;
+  border-radius: 20px;
+  border: 1px solid;
+  background-color: white;
+}
+
+.table {
+  width: 80%;
+}
+
+table {
+  width: 100%;
+  text-align: center;
+}
+
+tr:hover {
+  /* background: #cde8e3; */
+}
+
+th {
+  /* width: 10%; */
+  border-bottom: 2px solid #cde8e3;
+  height: 40px;
+}
+
+th .check {
+  /* width: 50%; */
+}
+
+.backdrop {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, .2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+td > input {
+  width: 40px;
+}
